@@ -12,9 +12,13 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #2a7ae2;
+$text-color:       #828282;
 $background-color: #090814;
 $brand-color:      #5f1598;
+
+$blue-color: #2a7ae2;
+$blue-color-light: lighten($blue-color, 30%);
+$blue-color-dark: darken($blue-color, 30%);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -71,4 +75,20 @@ $logo-widght: 500px;
 
 .site-title, .site-title:visited {
 	color: $site-title-color;
+}
+
+.post-title {
+	color: $blue-color;
+}
+
+a {
+ color: $blue-color;
+}
+
+a:visited {
+	color: $blue-color-dark;
+}
+
+a:hover {
+	color: $blue-color-light;
 }
